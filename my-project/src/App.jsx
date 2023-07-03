@@ -1,14 +1,20 @@
+import "./App.css";
+import Nav from "../src/components/Nav";
+import AuthButton from "./components/AuthButton";
+import Header from "./components/Header";
+import Trending from "./components/Trending";
+import CardMovie from "./components/CardMovie";
 
-import './App.css'
 
 export default function App() {
-    return (
-        <>
-            <h1 className="text-3xl font-bold underline">
-                Hello world!
-            </h1>
-            <h2 className=''></h2>
-        </>
-
-    )
+  return (
+    <div className="grid md:grid-cols-5">   
+      <Nav />
+      <main className="md:col-span-4 bg-cyan-50 py-6 px-12">
+        <AuthButton />
+        <Header/>
+        <Trending/>
+      </main>
+    </div>
+  );
 }

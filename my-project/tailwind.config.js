@@ -6,11 +6,15 @@ export default {
     ],
     darkMode: false,
     theme: {
-        extend: {
-            colors: {
-                space: '#5c6ac6'
+        extend:{
+            fontFamily: {
+                barlow: ['"Barlow Condensed"','sans-serif']
+            },
+            colors:{
+                primary: '#16405B'
             }
-        },
+        }
+    
     },
     plugins: [
     ],
